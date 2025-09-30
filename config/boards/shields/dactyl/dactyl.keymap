@@ -14,8 +14,8 @@
                  &kp N1   &kp W    &kp E    &kp R    &kp T
         &kp A    &kp Q    &kp S    &kp D    &kp F    &kp G
         &kp A    &kp A    &kp X    &kp C    &kp V    &kp B
-        &kp A    &kp Z    &kp A    &kp A    &kp A    &kp A    &kp A
-                                             &studio_unlock   &kp A
+        &kp A    &kp Z    &kp A    &kp A    &kp A    &kp SPACE &kp LSHFT
+                                                &studio_unlock &kp A
                         >;
                 };
         };
