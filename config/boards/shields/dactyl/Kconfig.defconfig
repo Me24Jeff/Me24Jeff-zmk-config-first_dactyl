@@ -3,4 +3,10 @@ if SHIELD_DACTYL
 config ZMK_KEYBOARD_NAME
     default "Dactyl"
 
+config ZMK_SLEEP
+    default y
+
+config ZMK_IDLE_SLEEP_TIMEOUT
+    default 900000 # 15 minutes (900000 milliseconds)
+
 endif

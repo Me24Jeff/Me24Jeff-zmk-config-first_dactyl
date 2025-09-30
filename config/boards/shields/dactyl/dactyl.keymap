@@ -2,20 +2,57 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define windows C_AC_DESKTOP_SHOW_ALL_WINDOWS
+#define bri_up C_BRI_UP
+#define bri_dn C_BRI_DN
+#define dict C_VOICE_COMMAND
 
 / {
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        display-name = "Default Layer";
+                        display-name = "Default Layer for Mac";
                         bindings = <
                           &kp N2   &kp N3   &kp N4   &kp N5
                  &kp N1   &kp W    &kp E    &kp R    &kp T
-        &kp A    &kp Q    &kp S    &kp D    &kp F    &kp G
-        &kp A    &kp A    &kp X    &kp C    &kp V    &kp B
-        &kp A    &kp Z    &kp A    &kp A    &kp A    &kp SPACE &kp LSHFT
-                                                &studio_unlock &kp A
+        &kp ESC  &kp Q    &kp S    &kp D    &kp F    &kp G
+        &kp TAB  &kp A    &kp X    &kp C    &kp V    &kp B
+        &mo 3    &kp Z  &kp MINUS &kp EQUAL &mo 2    &kp SPACE &kp LSHFT
+                                                     &LGUI     &kp LALT
+                        >;
+                };
+                default_layer_windows {
+                        display-name = "Default Layer for Windows";
+                        bindings = <
+                          &trans   &trans   &trans   &trans
+                 &trans   &trans   &trans   &trans   &trans
+        &trans   &trans   &trans   &trans   &trans   &trans
+        &trans   &trans   &trans   &trans   &trans   &trans
+        &trans   &trans   &trans   &trans   &trans   &trans    &trans
+                                                     &LCTRL    &trans
+                        >;
+                };
+                function_layer {
+                        display-name = "Function Layer";
+                        bindings = <
+                             &kp F2     &kp F3     &kp F4      &kp F5
+                 &kp F1      &kp bri_dn &kp dict   &kp windows &kp C_PP
+        &kp ESC  &kp bri_up  &mt AT N2 &mt HASH N3 &mt DLLR N4 &mt PRCNT N5
+        &kp TAB  &mt EXCL N1 &kp X      &kp C      &kp V       &kp B
+        &kp A    &kp Z       &kp MINUS  &kp EQUAL  &trans      &kp SPACE &kp LSHFT
+                                                              &LGUI     &kp LALT
+                        >;
+                };
+                bluetooth_layer {
+                        display-name = "Bluetooth Layer";
+                        bindings = <
+                             &none        &none        &none        &none
+                 &none       &none        &none        &none        &none
+        &none    &none       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none
+        &none    &bootloader &none        &none        &none        &none
+        &trans   &none       &none        &none        &none        &tog 1    &studio_unlock
+                                                                    &none     &none
                         >;
                 };
         };
