@@ -14,7 +14,7 @@ config ZMK_SPLIT
     default y
 
 config ZMK_SLEEP
-    default y
+    default y
 
 config ZMK_IDLE_SLEEP_TIMEOUT
     default 900000 # 15 minutes (900000 milliseconds)
