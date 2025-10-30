@@ -19,4 +19,10 @@ config ZMK_SLEEP
 config ZMK_IDLE_SLEEP_TIMEOUT
     default 900000 # 15 minutes (900000 milliseconds)
 
+config ZMK_KEYBOARD_NAME
+    default "Dactyl"
+
+config ZMK_BLE
+    default y
+
 endif
