@@ -4,7 +4,10 @@
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default";
-        
+
+        kscan = <&kscan0>;
+        transform = <&matrix_transform0>;
+
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100  200   30       0     0     0>
             , <&key_physical_attrs 100 100  300    0       0     0     0>
@@ -53,8 +56,6 @@
             , <&key_physical_attrs 100 100  425  450    1500   425   450>
             , <&key_physical_attrs 100 100  540  480    2450   540   480>
             , <&key_physical_attrs 100 100  645  530    2940   645   530>
-            , <&key_physical_attrs 100 100  800  530 (-2940)   900   530>
-            , <&key_physical_attrs 100 100  905  480 (-2450)  1005   480>
             , <&key_physical_attrs 100 100 1020  450 (-1500)  1120   450>
             , <&key_physical_attrs 100 100 1145  400       0     0     0>
             , <&key_physical_attrs 100 100 1245  430       0     0     0>
