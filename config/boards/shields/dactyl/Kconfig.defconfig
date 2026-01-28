@@ -31,8 +31,8 @@ config ZMK_BATTERY_REPORTING
 config ZMK_POINTING
         default y
 
-    config INPUT
-        default y
+config INPUT
+    default y
 endif
 
 if SHIELD_DACTYL_RIGHT
@@ -41,5 +41,8 @@ config SPI
     default y
 
 config PMW3610_ALT
+    default y
+
+config ZMK_INPUT_SPLIT
     default y
 endif

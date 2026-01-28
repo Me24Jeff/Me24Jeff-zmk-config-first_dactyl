@@ -80,8 +80,8 @@
 };
 
 / {
-  trackball_listener {
-    compatible = "zmk,input-listener";
+  trackball_split {
+    compatible = "zmk,input-split";
     device = <&trackball>;
   };
 };
