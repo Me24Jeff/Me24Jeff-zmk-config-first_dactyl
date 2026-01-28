@@ -7,6 +7,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 config ZMK_MOCK_DEVICE
+    bool
     default y
 endif
 
