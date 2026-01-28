@@ -45,7 +45,7 @@
         &trans   &trans   &trans   &trans   &trans   &trans                           &trans   &trans   &trans   &trans   &trans
         &trans   &trans   &trans   &trans   &trans   &trans    &trans        &trans   &trans   &kp LGUI &trans   &trans   &trans
                                                      &kp LCTRL &trans
-                        >
+                        >;
                 };
                 function_layer {
                         display-name = "Function Layer";
