@@ -28,4 +28,18 @@ config ZMK_BLE
 config ZMK_BATTERY_REPORTING
     default y
 
+config ZMK_POINTING
+        default y
+
+    config INPUT
+        default y
+endif
+
+if SHIELD_DACTYL_RIGHT
+
+config SPI
+    default y
+
+config PMW3610_ALT
+    default y
 endif
