@@ -22,7 +22,12 @@
 };
 
 / {
+    trackball_proxy: trackball_proxy {
+        compatible = "zmk,mock-device";
+    };
+
     trackball_listener {
         compatible = "zmk,input-listener";
+        device = <&trackball_proxy>;
     };
 };
