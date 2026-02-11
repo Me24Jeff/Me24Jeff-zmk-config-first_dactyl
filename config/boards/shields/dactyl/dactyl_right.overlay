@@ -1,4 +1,6 @@
 #include "dactyl.dtsi"
+#include "dactyl_pmw3610.dtsi"
+#include "dactyl_pointer.dtsi"
 
 &kscan0 {
     col-gpios
@@ -23,3 +25,6 @@
     col-offset = <7>;
 };
 
+&trackball_listener {
+    status = "okay";
+};
